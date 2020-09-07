@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Only keep yarn.lock in the root
+package-lock.json
+*/**/yarn.lock
+
+# Dist folders
+# dist
+
+# VSCode
+.vscode
+
+# OSX
+.DS_Store

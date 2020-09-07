@@ -1,0 +1,36 @@
+{
+  "name": "vue3-compiler-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"ts-node\"  src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon -h"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "@vue/server-renderer": "^3.0.0-rc.10",
+    "vue": "^3.0.0-rc.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/koa": "^2.11.4",
+    "@types/koa-router": "^7.4.1",
+    "@types/node": "^14.6.0",
+    "@vue/compiler-sfc": "^3.0.0-rc.10",
+    "nodemon": "^2.0.4",
+    "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "rollup-plugin-vue": "^6.0.0-beta.10",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
