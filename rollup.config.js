@@ -23,7 +23,7 @@ export default {
         babel({ babelHelpers: 'bundled' }),
         serve({ // 开启本地服务
             open: true,
-            openPage: '/demo/index.html', // 打开的页面
+            openPage: 'index.html', // 打开的页面
             port: 8080,
             contentBase: ''
         })
