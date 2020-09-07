@@ -4,6 +4,7 @@ import vue from 'rollup-plugin-vue';
 import typescript from 'rollup-plugin-typescript2';
 import commonjs from 'rollup-plugin-commonjs'
 import css from 'rollup-plugin-css-only'
+import serve from 'rollup-plugin-serve'
 
 export default {
     input: 'pages/home/App.vue',
@@ -19,7 +20,13 @@ export default {
         commonjs(),
         vue({ template: { optimizeSSR: false }, css: true }),  // { template: { optimizeSSR: true } }
         resolve({ extensions: ['.vue'] }),  // 
-        babel({ babelHelpers: 'bundled' })
+        babel({ babelHelpers: 'bundled' }),
+        serve({ // 开启本地服务
+            open: true,
+            openPage: '/demo/index.html', // 打开的页面
+            port: 8080,
+            contentBase: ''
+        })
     ],
     // 指出应将哪些模块视为外部模块
     // external: ['koa']

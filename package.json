@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "rollup -c rollup.config.js",
     "dev": "nodemon --exec \"ts-node\"  src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemon": "nodemon -h"
@@ -28,6 +29,7 @@
     "@vue/compiler-sfc": "^3.0.0-rc.10",
     "nodemon": "^2.0.4",
     "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-serve": "^1.0.4",
     "rollup-plugin-typescript2": "^0.27.2",
     "rollup-plugin-vue": "^6.0.0-beta.10",
     "ts-node": "^8.10.2",
